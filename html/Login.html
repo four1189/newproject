@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login</title>
+  <link href="#" crossorigin="anonymous">
+  <link href="./../css/stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="./../html/home.html">
+        <img src="https://img.icons8.com/ios-filled/50/fire-exit.png" alt="Logo" width="50" height="50">
+      </a>
+    </div>
+  </nav>
+  <div class="text-center">
+    <div class="form-login">
+      <form id="loginForm" onsubmit="return login()">
+        <div class="form-floating-son">
+          <img
+            src="https://cdn.discordapp.com/attachments/1006625994641256609/1246916607049994331/S__34824194_0.jpg?ex=665ec9d5&is=665d7855&hm=08990a28ac4b4413b969cfe8ab3bf95d4689124b0f47556167f095bee7cc2887&"
+            width="150">
+          <h2>Account</h2>
+          <div class="form-floating-con">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="username" placeholder="Username" value="">
+              <label for="floatingUsername">Username</label>
+
+              <input type="password" class="form-control" id="password" placeholder="Password" value="">
+              <label for="floatingPassword">Password</label>
+
+              <button type="submit" class="btn btn-primary" href="./../html/index.html">Login</button>
+              <p>No account pressed on me <a href="./../html/register.html">Sign in</a></p>
+            </div>
+
+
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="./../js/login.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.11.0/dist/sweetalert2.all.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+
+</html>

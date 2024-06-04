@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="#">
+
+    <style>
+        body, div.container1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #563535;
+        }
+        .container1 {
+            background: rgb(75, 72, 72);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            max-width: 400px;
+            width: 100%;
+        }
+        h2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            padding: 10px;
+            border: 1px solid #464343;
+            border-radius: 4px;
+            width: 100%;
+        }
+        .btn-primary {
+            padding: 10px;
+            background-color: #092cb7;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            text-align: center;
+            width: 100%;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .navbar-brand2 img {
+            background-color: #563535;
+            width: 2rem;
+            height: 2rem;           
+        }
+        .logo-img {
+            border: #000000 8px solid;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand1" href="./../html/home.html">
+                <img src="https://img.icons8.com/ios-filled/50/fire-exit.png" alt="Logo" width="50" height="50">
+            </a>
+        </div>
+    </nav><br>
+    <div class="container1">
+        <form id="registerForm">
+            <div class="text-center">
+                <img class="logo-img"  src="https://cdn.discordapp.com/attachments/1006625994641256609/1247276695023517798/360_F_573551225_h5mGL6pOLL5mDJi9pz7nYfG8uCppOfvW.jpg?ex=665f7071&is=665e1ef1&hm=76e43eec048be8836bc32f37c709bce7eff5476da2d876569d9f77cbe54cf31a&"
+                    height="150" alt="Logo">
+                        <h2>Create account</h2>
+                        <a class="21" href="./../html/Login.html">
+                    <img width="28" height="28" src="https://img.icons8.com/material-outlined/24/fire-exit.png"></a>
+            </div><br>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <button type="submit" class="btn-primary" href="./../html/Login.html">Register</button>
+        </form>
+    </div>
+    <script src="./../js/register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>
